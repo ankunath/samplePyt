@@ -16,3 +16,28 @@ python:
 build:
   ci:
     - python --version
+env:
+  - DB=apc
+  - DB=redis
+  - DB=mongodb
+  - DB=memcache
+  - DB=apc1
+  - DB=redis2
+  - DB=mongodb3
+  - DB=memcache4
+  - DB=apc5
+  - DB=redis6
+  - DB=mongodb7
+  - DB=memcache3
+  - DB=apc3
+  - DB=redi3s
+  - DB=mongo3db
+  - DB=memcac3he
+  - DB=apc3
+  - DB=redi3s
+  - DB=mongo4db
+  - DB=memcac5he
+  - DB=apc6
+  - DB=redi2s
+  - DB=mongo1db
+  - DB=memcac1he
