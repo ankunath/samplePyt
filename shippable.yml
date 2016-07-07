@@ -16,4 +16,11 @@ python:
 build:
   ci:
     - python --version
-
+env:
+  - DB=apc
+  - DB=redis
+  - DB=mongodb
+  - DB=memcache
+  - DB=apc
+  - DB=redis
+  - DB=mongodb
