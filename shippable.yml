@@ -5,21 +5,18 @@ language: python
 # Version number
 python:
   - 2.6
-  - 2.7
-  - 3.2
-  - 3.3
-  - 3.4
-  - 3.5
-  - pypy
-  - pypy3
-  - 2.64
-  - 2.72
-  - 3.25
-  - 3.37
-  - 3.41
-  - 3.53
-  - pypyu
 
 build:
   ci:
     - python --version
+
+integrations:
+  notifications:
+    - integrationName: shuh
+      type: webhook
+      payload:
+        - versionName=Shippable Run $BUILD_NUMBER
+      on_success: always
+      on_failure: always
+      on_pull_request: always
+      on_start: always
